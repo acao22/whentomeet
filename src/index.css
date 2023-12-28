@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    font-family: "Arial";
+    color: black;
+    background: rgba(255, 237, 237, 1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+    background: rgba(255, 246, 246, 1);
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 189, 189, 1);
+}
+
+.navbar .links {
+    background: rgba(255, 246, 246, 1);
+}
+
+.navbar a {
+    margin-left: 16px;
+    text-decoration: none;
+    background: rgba(255, 246, 246, 1);
+
+}
+
+.navbar a:hover {
+    color: rgba(255, 164, 174, 1);
+}
+
+.eventname {
+    max-width: 200px;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    width: 200px;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 164, 174, 1);
+    box-sizing: border-box;
+    display: block;
+    border-radius: 2px;
+    background-color: rgba(255, 246, 246, 1);
+}
+
+input:focus {
+    border: 1px solid rgba(255, 164, 174, 1);
+    outline: none;
+}
+
+select {
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 164, 174, 1);
+    box-sizing: border-box;
+    display: block;
+    border-radius: 2px;
+    background-color: rgba(255, 246, 246, 1);
+}
+select:focus {
+    border: 1px solid rgba(255, 164, 174, 1);
+    outline: none;
+}
+
+.newevent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newevent ul {
+    list-style: none;
+}
+.newevent li {
+    padding: 50px;
+    display: inline-block;
+}
+.times {
+    display: flex;
+}
+
+.times select {
+    display: inline-block;
+    margin: 10px;
 }
